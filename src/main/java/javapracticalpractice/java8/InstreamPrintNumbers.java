@@ -13,6 +13,8 @@ public class InstreamPrintNumbers {
 
 		IntStream.range(1, 10).forEach(System.out::println);
 		
+		IntStream.range(1, 20).forEachOrdered(System.out::println);
+		
 	}
 
 }

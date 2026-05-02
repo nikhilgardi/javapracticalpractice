@@ -122,6 +122,15 @@ public class StudyData {
 		System.out.println(IntStream.rangeClosed(1, 5).anyMatch(n -> n > 3));
 		
 		System.out.println(IntStream.rangeClosed(1, 5).allMatch(n -> n > 0));
+		
+		/*In simple terms:
+			forEach() → order not guaranteed
+			forEachOrdered() → order guaranteed (sequential output)*/
+		
+		IntStream.range(1, 10).forEach(System.out::println);
+		
+		IntStream.range(1, 20).forEachOrdered(System.out::println);
+		
 	}
 
 }
