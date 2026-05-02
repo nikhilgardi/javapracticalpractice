@@ -12,6 +12,7 @@ public class InstreamPrintNumbers {
 		//System.out.println("Using Traditional Loop");
 
 		IntStream.range(1, 10).forEach(System.out::println);
+		
 	}
 
 }
